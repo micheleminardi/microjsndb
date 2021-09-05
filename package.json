@@ -1,6 +1,6 @@
 {
   "name": "@micheleminardi/microjsndb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simplest way to save JS object in a persistent json file",
   "main": "db.js",
   "keywords": [
