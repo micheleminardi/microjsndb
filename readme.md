@@ -76,16 +76,16 @@ database.data.Find({ age: 24 })[0].assign({ city: "Palermo" });
 
 ### Delete / Delete
 
-```javascipt
+```javascript
 // Delete an element from database
 database.data.Delete(database.data.Find({ age: 24 })[0]);
 ```
 
 ### One more / Save
 
-```javascipt
+```javascript
 // For saving our data to the file, we need to call the save method
-database.save()
+database.save();
 ```
 
 # Nice, but ..
@@ -97,11 +97,11 @@ database.data var and, call on the end the database.save() method to save all of
 
 # Example
 
-```javascipt
+```javascript
 const DB = require("./db");
 const database = new DB("test.json");
 database.data.Push({ name: "michele" });
-database.data.Find({name:"michele"})[0].assign({citta:"Palermo"});
+database.data.Find({ name: "michele" })[0].assign({ citta: "Palermo" });
 found = database.data.Find({ citta: "Palermo" });
 database.data.Delete(found[0]);
 process.on("exit", () => {
