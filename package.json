@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/micheleminardi/microjsndb#readme",
   "publishConfig": {
-    "registry": "https://github.com/micheleminardi/"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
