@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Simplest way to save JS object in a persistent json file",
   "main": "db.js",
+  "keywords": [
+    "json",
+    "db"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

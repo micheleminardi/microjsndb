@@ -94,3 +94,17 @@ database.save()
 
 All the methods showed up, are just some function added to JS's Array and Object, this means that we can just modify our
 database.data var and, call on the end the database.save() method to save all of our data on the json file
+
+# Example
+
+```javascipt
+const DB = require("./db");
+const database = new DB("test.json");
+database.data.Push({ name: "michele" });
+database.data.Find({name:"michele"})[0].assign({citta:"Palermo"});
+found = database.data.Find({ citta: "Palermo" });
+database.data.Delete(found[0]);
+process.on("exit", () => {
+  database.save();
+});
+```
