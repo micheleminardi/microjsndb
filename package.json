@@ -1,11 +1,15 @@
 {
   "name": "@micheleminardi/microjsndb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simplest way to save JS object in a persistent json file",
   "main": "db.js",
   "keywords": [
     "json",
-    "db"
+    "db",
+    "fast db",
+    "light db",
+    "nodejs db",
+    "database"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

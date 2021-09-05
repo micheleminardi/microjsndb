@@ -12,13 +12,19 @@ microjsndb support CRUD operation:
 | Update    | Assign   | change value of some key or add new key             |
 | Delete    | Delete   | delete an element                                   |
 
+## Install
+
+```bash
+npm install @micheleminardi/microjsndb@1.0.1
+```
+
 ## Some code
 
 First of all, we need to load all the necessary stuffs
 
 ```javascript
 //Load the modules
-const DB = require("./db");
+const DB = require("@micheleminardi/microjsndb");
 // Create a new instance of database
 database = new DB("test.json");
 
@@ -98,12 +104,18 @@ database.data var and, call on the end the database.save() method to save all of
 # Example
 
 ```javascript
-const DB = require("./db");
+const DB = require("@micheleminardi/microjsndb");
 const database = new DB("test.json");
+
 database.data.Push({ name: "michele" });
+database.data.Push({ name: "michele" });
+
 database.data.Find({ name: "michele" })[0].assign({ citta: "Palermo" });
+
 found = database.data.Find({ citta: "Palermo" });
+
 database.data.Delete(found[0]);
+
 process.on("exit", () => {
   database.save();
 });
