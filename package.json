@@ -1,0 +1,22 @@
+{
+  "name": "microjsndb",
+  "version": "1.0.0",
+  "description": "Simplest way to save JS object in a persistent json file",
+  "main": "db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micheleminardi/microjsndb.git"
+  },
+  "author": "Michele Minardi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micheleminardi/microjsndb/issues"
+  },
+  "homepage": "https://github.com/micheleminardi/microjsndb#readme",
+  "publishConfig": {
+    "registry": "https://github.com/micheleminardi/"
+  }
+}
