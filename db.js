@@ -1,7 +1,6 @@
 const fs = require("fs");
 
 module.exports = class DB {
-  //Costruttore del database
   constructor(file, autoSave) {
     this.file = file;
     this.autoSave = autoSave;
@@ -16,7 +15,6 @@ module.exports = class DB {
     }
   }
 
-  //Sovrascrive il contenuto del file, con i nuovi dati
   save() {
     fs.writeFileSync(this.file, JSON.stringify(this.data), () => {});
   }
