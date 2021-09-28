@@ -11,7 +11,15 @@ module.exports = class DB {
       });
       this.data = [];
     } else {
-      this.data = eval(fs.readFileSync(file).toString());
+      var content = fs.readFileSync(file).toString();
+      if (content === "") {
+        fs.writeFileSync(file, "[]", () => {
+          console.log("done");
+        });
+        this.data = eval(fs.readFileSync(file).toString());
+      } else {
+        this.data = eval(fs.readFileSync(file).toString());
+      }
     }
   }
 
